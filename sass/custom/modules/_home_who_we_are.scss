@@ -1,0 +1,74 @@
+.hm-who {
+  padding-top: 95px;
+  padding-bottom: 67px;
+
+  .hm-who {
+    &__top {
+
+      text-align: center;
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin: 0 auto 72px;
+        max-width: 602px;
+      }
+    }
+
+    &__middle {
+
+      .row:not(:last-of-type) {
+        margin-bottom: 90px;
+      }
+
+      .row > div:first-of-type {
+          padding-right: 51px;
+      }
+
+      .row:nth-child(even) > div:first-of-type {
+        padding-left: 88px;
+
+        @media (max-width: $large) {
+          padding-left: 12px;
+
+          .hm-who__middle-body {
+            margin-bottom: 61px;
+
+            h3 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      &-image {
+        position: relative;
+        padding-bottom: calc(450/500*100%);
+        
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+
+      &-body {
+        h3 {
+          margin-top: 61px;
+          margin-bottom: 17px;
+        }
+
+        p {
+          max-width: 602px;
+        }
+      }
+    }
+  }
+}
+

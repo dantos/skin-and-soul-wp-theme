@@ -1,0 +1,47 @@
+.site-header {
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 38px;
+
+    .site-branding, .nv-social {
+      a {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .site-branding {
+      padding-right: 51px;
+    }
+
+    .main-navigation  {
+      width: auto;
+      padding-right: 37px;
+
+      ul {
+        display: flex;
+
+        li {
+          &:not(:last-of-type) {
+            padding-right: 37px;
+          }
+          a {
+            color: $black;
+            font-family: $font__secondary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 175% */
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+}

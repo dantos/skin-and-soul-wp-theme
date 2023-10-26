@@ -1,0 +1,97 @@
+.hm-services {
+  background-color: $color__background-main;
+  padding-top: 80px;
+  padding-bottom: 89px;
+
+  &__top {
+    margin-bottom: 12px;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    p {
+      max-width: 1056px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__middle {
+    &-body {
+      position: relative;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      &:hover {
+        li:not(:hover){
+          border-bottom: 1px solid $color___border_main_opaque;
+
+          &:first-of-type {
+            border-top: 1px solid $color___border_main_opaque;
+          }
+
+          h3 {
+            opacity: 0.5;
+          }
+        }
+
+        li:hover {
+          .service-image {
+            img {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      li {
+        border-bottom: 1px solid $color___border_main;
+
+        &:first-of-type {
+          border-top: 1px solid $color___border_main;
+        }
+
+        h3 {
+          margin-top: 24px;
+          margin-bottom: 24px;
+        }
+
+        .service-image {
+          position: absolute;
+          top: 31px;
+          right: 33px;
+
+          img {
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+          }
+        }
+
+      }
+
+
+
+    }
+  }
+
+}
+
+
+
+//&:hover {
+//  img {
+//    opacity: 0;
+//    pointer-events: none;
+//    &:hover {
+//      opacity: 1;
+//    }
+//  }
+//}
+//
+//&:not(:hover) {
+//  //OPACITY 0, POINTER EVENT NONE
+//}
+//
+////TODO: IMAGEN HOVER: OPACITY 0, POINTER EVENT NONE - QUITAR EN HOVER

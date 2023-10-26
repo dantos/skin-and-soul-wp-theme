@@ -1,0 +1,17 @@
+@mixin font-face($font-name, $file-name, $ext, $format, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: local($file-name),
+    url($file-name + '.' + $ext) format($format);
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face("NewYork", "../../assets/fonts/NewYork", 'otf', 'opentype', $style: normal, $weight: 400);
+@include font-face("Montserrat-Regular", "../../assets/fonts/Montserrat-Regular", 'ttf', 'truetype', $style: normal, $weight: 400);
+@include font-face("Montserrat-SemiBold", "../../assets/fonts/Montserrat-SemiBold", 'ttf', 'truetype', $style: normal, $weight: 600);
+
+$font__main: NewYork, sans-serif;
+$font__secondary: Montserrat-Regular, sans-serif;
+$font__button-cta: Montserrat-SemiBold, sans-serif;
