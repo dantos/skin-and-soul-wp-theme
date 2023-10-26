@@ -6,7 +6,9 @@
             <div class="row">
                 <div class="col">
                     <h2><?=$ourServices['title']?></h2>
-	                <?=$ourServices['description']?>
+                    <div class="hm-services__top-paragraph">
+	                    <?=$ourServices['description']?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -18,11 +20,13 @@
 		            if( !empty($ourServices["service_$i"]['name']) ): ?>
                         <li>
                             <h3><?=$ourServices["service_$i"]['name']?></h3>
-                            <div class="service-image">
-                                <?php if( $ourServices["service_$i"]['image'] ):?>
-                                    <img src="<?= esc_url( $ourServices["service_$i"]['image']['url'] ) ?>" alt="<?= esc_attr( $ourServices["service_$i"]['image']['alt'] ) ?>">
-	                            <?php endif;?>
-                            </div>
+			                <?php if ($ourServices["service_$i"]['image']): ?>
+                                <div class="service-image">
+                                    <?php if( $ourServices["service_$i"]['image'] ):?>
+                                        <img src="<?= esc_url( $ourServices["service_$i"]['image']['url'] ) ?>" alt="<?= esc_attr( $ourServices["service_$i"]['image']['alt'] ) ?>">
+                                    <?php endif;?>
+                                </div>
+			                <?php endif;?>
                         </li>
 		            <?php endif; endfor;?>
                     </ul>

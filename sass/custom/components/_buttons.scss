@@ -19,5 +19,9 @@
     &:active {
       color: $white;
     }
+
+    &:hover {
+      background: $color__button-cta_opaque;
+    }
   }
 }

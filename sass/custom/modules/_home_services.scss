@@ -10,7 +10,7 @@
       margin-bottom: 24px;
     }
 
-    p {
+    &-paragraph {
       max-width: 1056px;
       margin-bottom: 36px;
     }
@@ -24,7 +24,7 @@
       padding: 0;
 
       &:hover {
-        li:not(:hover){
+        li:not(:hover) {
           border-bottom: 1px solid $color___border_main_opaque;
 
           &:first-of-type {
@@ -53,8 +53,8 @@
         }
 
         h3 {
-          margin-top: 24px;
-          margin-bottom: 24px;
+          margin: 0;
+          padding: 24px 0;
         }
 
         .service-image {
@@ -70,28 +70,6 @@
         }
 
       }
-
-
-
     }
   }
-
 }
-
-
-
-//&:hover {
-//  img {
-//    opacity: 0;
-//    pointer-events: none;
-//    &:hover {
-//      opacity: 1;
-//    }
-//  }
-//}
-//
-//&:not(:hover) {
-//  //OPACITY 0, POINTER EVENT NONE
-//}
-//
-////TODO: IMAGEN HOVER: OPACITY 0, POINTER EVENT NONE - QUITAR EN HOVER

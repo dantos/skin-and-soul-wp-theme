@@ -11,7 +11,7 @@
         margin-bottom: 15px;
       }
 
-      p {
+      &-paragraph {
         margin: 0 auto 72px;
         max-width: 602px;
       }
@@ -25,6 +25,9 @@
 
       .row > div:first-of-type {
           padding-right: 51px;
+        @media (max-width: $large) {
+          padding-right: 12px;
+        }
       }
 
       .row:nth-child(even) > div:first-of-type {
@@ -62,10 +65,13 @@
         h3 {
           margin-top: 61px;
           margin-bottom: 17px;
+          @media (max-width: $x-large) {
+            margin-top: 20px;
+          }
         }
-
-        p {
+        &-paragraph {
           max-width: 602px;
+          margin-bottom: 37px;
         }
       }
     }

@@ -58,7 +58,7 @@
             </nav><!-- #site-navigation -->
             <div class="nv-social">
                 <a href="#">
-                    <img src="<?= get_template_directory_uri(). '/assets/image/instagram-icon.svg' ?>" alt="placeholder">
+                    <img src="<?= get_template_directory_uri(). '/assets/image/instagram-icon.svg' ?>" alt="instagram">
                 </a>
             </div>
         </div>

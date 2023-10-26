@@ -17,11 +17,11 @@
       @media (max-width: $x-large) {
         font-size: 60px;
       }
-
     }
 
-    p {
+    &-paragraph {
       max-width: 465px;
+      margin-bottom: 37px;
     }
 
     .btn-cta {
@@ -33,7 +33,6 @@
 
   &__image {
     img {
-      max-width: 100%;
       @media (max-width: $large) {
         padding-top: 60px;
       }
